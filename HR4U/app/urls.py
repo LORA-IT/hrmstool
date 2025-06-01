@@ -50,7 +50,7 @@ urlpatterns = [
 
 
     #  Profile #
-    path('profile', views.profile_view, name='profile'),
+    # path('profile', views.profile_view, name='profile'),
     path('edit_personal_info/<int:employee_id>', views.edit_personal_info, name='edit_personal_info'),
     path('edit_professional_info/<int:employee_id>', views.edit_professional_info, name='edit_professional_info'),
     path('edit_banking_info/<int:employee_id>', views.edit_banking_info, name='edit_banking_info'),
