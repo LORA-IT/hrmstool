@@ -894,6 +894,7 @@ def profile_view(request):
     user = request.user
     employee = Employee.objects.get(employee_id=user.employee_id)
     notifications = Notification.objects.filter(recipient=request.user, is_read=False).order_by('-created_at')[:5]
+    print('===', employee.name, '===')
 
     return render(request, 'profile.html', {
         'user': user,
