@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = True
+DEBUG = False
 CSRF_TRUSTED_ORIGINS = [
     "https://aihr4u.com",
     "https://www.aihr4u.com",
